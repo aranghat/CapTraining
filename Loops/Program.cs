@@ -59,12 +59,39 @@ namespace Loops
 
             #region forloop
 
-            for (int count = 0; count < 10; count++)
-            {
-                Console.WriteLine($"{count}");
-            }
-            
+            //for (int count = 0; count < 10; count++)
+            //{
+            //    Console.WriteLine($"{count}");
+            //}
+
             #endregion
+
+            #region PrimeNumbers
+
+            Console.WriteLine("Enter the max limit :");
+            string userInput = Console.ReadLine();
+            int maxLimit     = int.Parse(userInput);
+
+            for (int i = 2; i <= maxLimit; i++)
+            {
+                bool isPrime = true;
+
+                for (int j = 2; j < i; j++)
+                {
+                    if (i % j == 0)
+                    {
+                        isPrime = false;
+                        break;
+                    }
+                }
+
+                if (isPrime)
+                    Console.WriteLine(i);
+            }
+
+
+            #endregion
+
         }
     }
 }
