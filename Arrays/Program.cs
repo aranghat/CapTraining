@@ -93,27 +93,33 @@ namespace Arrays
             //jaggedArray[1] = new int[] {34, 51};
             //jaggedArray[2] = new int[] {1, 2, 3, 4, 5, 6, 7};
 
-            int[][] jaggedArray =
-            {
-                new int[] {10, 11, 21, 31, 41},
-                new int[] {34, 51},
-                new int[] {1, 2, 3, 4, 5, 6, 7}
-            }; 
+            //int[][] jaggedArray =
+            //{
+            //    new int[] {10, 11, 21, 31, 41},
+            //    new int[] {34, 51},
+            //    new int[] {1, 2, 3, 4, 5, 6, 7}
+            //}; 
 
-            for (int row = 0; row < 3; row++)
-            {
-                for (int col = 0; col < jaggedArray[row].Length; col++)
-                {
-                    Console.Write($"{jaggedArray[row][col]} ");
-                }
+            //for (int row = 0; row < 3; row++)
+            //{
+            //    for (int col = 0; col < jaggedArray[row].Length; col++)
+            //    {
+            //        Console.Write($"{jaggedArray[row][col]} ");
+            //    }
 
-                foreach (var rowData in jaggedArray[row])
-                {
-                    Console.Write($"{rowData} ");
-                }
+            //    foreach (var rowData in jaggedArray[row])
+            //    {
+            //        Console.Write($"{rowData} ");
+            //    }
 
-                Console.WriteLine();
-            }
+            //    Console.WriteLine();
+            //}
+
+            var cities = new string[10];
+
+            for(int i = 0;i <10; i++)
+                cities[i] = Console.ReadLine();
+           
 
             #endregion
 
