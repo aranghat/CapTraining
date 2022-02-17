@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicType", "DynamicType\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullableTypes", "NullableTypes\NullableTypes.csproj", "{51DFBFEE-A4E9-4C98-B786-1302A06CA56F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsAsOperators", "IsAsOperators\IsAsOperators.csproj", "{B42FB8F3-88B0-4F6A-885E-E9F829E6B65A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegularExpression", "RegularExpression\RegularExpression.csproj", "{F1DEF38C-2B1C-4F4F-96E5-30C015B505B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{51DFBFEE-A4E9-4C98-B786-1302A06CA56F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51DFBFEE-A4E9-4C98-B786-1302A06CA56F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51DFBFEE-A4E9-4C98-B786-1302A06CA56F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B42FB8F3-88B0-4F6A-885E-E9F829E6B65A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B42FB8F3-88B0-4F6A-885E-E9F829E6B65A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B42FB8F3-88B0-4F6A-885E-E9F829E6B65A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B42FB8F3-88B0-4F6A-885E-E9F829E6B65A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1DEF38C-2B1C-4F4F-96E5-30C015B505B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1DEF38C-2B1C-4F4F-96E5-30C015B505B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1DEF38C-2B1C-4F4F-96E5-30C015B505B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1DEF38C-2B1C-4F4F-96E5-30C015B505B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

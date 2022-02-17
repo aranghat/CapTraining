@@ -10,18 +10,27 @@ namespace NullableTypes
     {
         static void Main(string[] args)
         {
-            
-            int? initialBalance = null;
-            initialBalance = 5000;
-            //OpenBankAccount(initialBalance);
 
-            int?[] marks = new int?[10];
-            marks[0] = 50;
-            marks[1] = 60;
+            //int? initialBalance = null;
+            //initialBalance = 5000;
+            ////OpenBankAccount(initialBalance);
 
-            foreach(int? i in marks)
-                if(i.HasValue)
-                Console.WriteLine(i);
+            //int?[] marks = new int?[10];
+            //marks[0] = 50;
+            //marks[1] = 60;
+
+            //foreach(int? i in marks)
+            //    if(i.HasValue)
+            //      Console.WriteLine(i);
+
+            string marks = null;
+            //1. If conversion is not successful both will throw a format exception
+            //2. int.Parse throws ArgumentNullException in case the value is null
+            //3. Convert.ToInt32 will return 0 in case the value is null
+            int i       = Convert.ToInt32(marks); 
+                          //int.Parse(marks);
+
+            Console.WriteLine(i);
 
         }
 
