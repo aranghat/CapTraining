@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsAsOperators", "IsAsOperat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegularExpression", "RegularExpression\RegularExpression.csproj", "{F1DEF38C-2B1C-4F4F-96E5-30C015B505B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DebugBasics", "DebugBasics\DebugBasics.csproj", "{E8666E2C-03A1-444B-88BB-A70B0F06D8D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{F1DEF38C-2B1C-4F4F-96E5-30C015B505B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1DEF38C-2B1C-4F4F-96E5-30C015B505B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1DEF38C-2B1C-4F4F-96E5-30C015B505B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8666E2C-03A1-444B-88BB-A70B0F06D8D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8666E2C-03A1-444B-88BB-A70B0F06D8D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8666E2C-03A1-444B-88BB-A70B0F06D8D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8666E2C-03A1-444B-88BB-A70B0F06D8D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
