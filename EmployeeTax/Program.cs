@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CalculatorLibrary;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,6 +25,9 @@ namespace EmployeeTax
 
             emp1.DisplayDetails();
             emp2.DisplayDetails();
+
+            CalculationLogic logic = new CalculationLogic();
+            logic.Add(30, 50);
 
 
         }
