@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertiesInCSharp", "Prope
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indexer", "Indexer\Indexer.csproj", "{F2912FFF-3EA7-4922-A9D9-E28C35DD3DFC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartialClass", "PartialClass\PartialClass.csproj", "{AC2B22B8-BF69-43BB-A85F-85CAA1CCA4DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -139,6 +141,10 @@ Global
 		{F2912FFF-3EA7-4922-A9D9-E28C35DD3DFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2912FFF-3EA7-4922-A9D9-E28C35DD3DFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2912FFF-3EA7-4922-A9D9-E28C35DD3DFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC2B22B8-BF69-43BB-A85F-85CAA1CCA4DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC2B22B8-BF69-43BB-A85F-85CAA1CCA4DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC2B22B8-BF69-43BB-A85F-85CAA1CCA4DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC2B22B8-BF69-43BB-A85F-85CAA1CCA4DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -165,6 +171,7 @@ Global
 		{C5A3FBFB-BECA-42DA-80B3-01652335E255} = {BBC9FFE3-367E-4DF1-8820-FAC65F7B5C1D}
 		{1AB3704C-118F-4D7F-ABC4-C180C4DDA534} = {BBC9FFE3-367E-4DF1-8820-FAC65F7B5C1D}
 		{F2912FFF-3EA7-4922-A9D9-E28C35DD3DFC} = {BBC9FFE3-367E-4DF1-8820-FAC65F7B5C1D}
+		{AC2B22B8-BF69-43BB-A85F-85CAA1CCA4DD} = {BBC9FFE3-367E-4DF1-8820-FAC65F7B5C1D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D6BFA772-E528-4307-853A-96659A7DB7E1}
