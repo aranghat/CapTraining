@@ -53,6 +53,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartialClass", "PartialClas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InheritanceBasics", "InheritanceBasics\InheritanceBasics.csproj", "{E218D5A7-7F99-4D85-AD9A-AC4BB546C3B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverloadingMethods", "OverloadingMethods\OverloadingMethods.csproj", "{5C1F238D-6321-4492-9D7C-14E8459EB97A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -151,6 +153,10 @@ Global
 		{E218D5A7-7F99-4D85-AD9A-AC4BB546C3B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E218D5A7-7F99-4D85-AD9A-AC4BB546C3B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E218D5A7-7F99-4D85-AD9A-AC4BB546C3B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C1F238D-6321-4492-9D7C-14E8459EB97A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C1F238D-6321-4492-9D7C-14E8459EB97A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C1F238D-6321-4492-9D7C-14E8459EB97A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C1F238D-6321-4492-9D7C-14E8459EB97A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -179,6 +185,7 @@ Global
 		{F2912FFF-3EA7-4922-A9D9-E28C35DD3DFC} = {BBC9FFE3-367E-4DF1-8820-FAC65F7B5C1D}
 		{AC2B22B8-BF69-43BB-A85F-85CAA1CCA4DD} = {BBC9FFE3-367E-4DF1-8820-FAC65F7B5C1D}
 		{E218D5A7-7F99-4D85-AD9A-AC4BB546C3B8} = {BBC9FFE3-367E-4DF1-8820-FAC65F7B5C1D}
+		{5C1F238D-6321-4492-9D7C-14E8459EB97A} = {BBC9FFE3-367E-4DF1-8820-FAC65F7B5C1D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D6BFA772-E528-4307-853A-96659A7DB7E1}
