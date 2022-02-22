@@ -18,12 +18,19 @@ namespace StudentManager
                 
                 student.StudentId = StudentIdGenerator.Id;
                 student.Name      = Console.ReadLine();
-
+                student.TotalMarks = int.Parse(Console.ReadLine());
                 students[i] = student;
             }
 
+            Student studentWithMaxMarks = new Student();
             foreach (Student student in students)
-                student.DisplayDetails();
+            {
+                if(student.TotalMarks > studentWithMaxMarks.TotalMarks)
+                    studentWithMaxMarks = student;
+            }
+
+            Console.WriteLine($"Student with Max Marks : {studentWithMaxMarks.Name}" +
+                $" {studentWithMaxMarks.TotalMarks}");
         }
 
        

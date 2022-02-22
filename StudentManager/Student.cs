@@ -23,6 +23,8 @@ namespace StudentManager
                     throw new Exception("Invalid Student Name");
             }
         }
+
+        public int TotalMarks { get; set; }
     }
 
     public static class StudentIdGenerator
