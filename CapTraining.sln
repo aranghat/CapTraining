@@ -61,6 +61,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticClasses", "StaticClas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtentionMethods", "ExtentionMethods\ExtentionMethods.csproj", "{70AD698B-4786-4182-9443-830770AEE05F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentManager", "StudentManager\StudentManager.csproj", "{ABEDDBB6-39A2-48CB-BC21-E84BE105F5F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -175,6 +177,10 @@ Global
 		{70AD698B-4786-4182-9443-830770AEE05F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70AD698B-4786-4182-9443-830770AEE05F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70AD698B-4786-4182-9443-830770AEE05F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABEDDBB6-39A2-48CB-BC21-E84BE105F5F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABEDDBB6-39A2-48CB-BC21-E84BE105F5F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABEDDBB6-39A2-48CB-BC21-E84BE105F5F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABEDDBB6-39A2-48CB-BC21-E84BE105F5F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -207,6 +213,7 @@ Global
 		{593A865B-9B9B-4269-A7CB-91AAD45CE77F} = {BBC9FFE3-367E-4DF1-8820-FAC65F7B5C1D}
 		{CE2DB2BB-45AC-4E15-BDC2-D7894FE8880E} = {BBC9FFE3-367E-4DF1-8820-FAC65F7B5C1D}
 		{70AD698B-4786-4182-9443-830770AEE05F} = {BBC9FFE3-367E-4DF1-8820-FAC65F7B5C1D}
+		{ABEDDBB6-39A2-48CB-BC21-E84BE105F5F0} = {BBC9FFE3-367E-4DF1-8820-FAC65F7B5C1D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D6BFA772-E528-4307-853A-96659A7DB7E1}
