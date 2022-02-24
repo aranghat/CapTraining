@@ -85,6 +85,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TollManagerTask", "TollMana
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilenFolderBasics", "FilenFolderBasics\FilenFolderBasics.csproj", "{31B3CEA3-90AD-4929-A867-CDC618AB8EAC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializationBasics", "SerializationBasics\SerializationBasics.csproj", "{883369C4-84F7-45E5-BD50-B8745BD008EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -243,6 +245,10 @@ Global
 		{31B3CEA3-90AD-4929-A867-CDC618AB8EAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31B3CEA3-90AD-4929-A867-CDC618AB8EAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31B3CEA3-90AD-4929-A867-CDC618AB8EAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{883369C4-84F7-45E5-BD50-B8745BD008EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{883369C4-84F7-45E5-BD50-B8745BD008EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{883369C4-84F7-45E5-BD50-B8745BD008EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{883369C4-84F7-45E5-BD50-B8745BD008EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -286,6 +292,7 @@ Global
 		{F879ED17-2500-49C2-8145-5FF1173CA642} = {24CC1163-74CA-4A84-913B-F9E7CC96B468}
 		{4C06C07B-551B-4D68-BF25-3ECEE1DC57C2} = {24CC1163-74CA-4A84-913B-F9E7CC96B468}
 		{31B3CEA3-90AD-4929-A867-CDC618AB8EAC} = {24CC1163-74CA-4A84-913B-F9E7CC96B468}
+		{883369C4-84F7-45E5-BD50-B8745BD008EB} = {24CC1163-74CA-4A84-913B-F9E7CC96B468}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D6BFA772-E528-4307-853A-96659A7DB7E1}
