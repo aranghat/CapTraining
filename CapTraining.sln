@@ -67,7 +67,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\In
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionBasics", "ExceptionBasics\ExceptionBasics.csproj", "{754E8735-81C8-469C-9906-7D82CDAA099D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GenericsnCollections", "GenericsnCollections", "{24CC1163-74CA-4A84-913B-F9E7CC96B468}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".Net Fundementals 2", ".Net Fundementals 2", "{24CC1163-74CA-4A84-913B-F9E7CC96B468}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionsBasics", "CollectionsBasics\CollectionsBasics.csproj", "{8F47D550-BC02-4E46-AE88-6D7FF44D9606}"
 EndProject
@@ -86,6 +86,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilenFolderBasics", "FilenFolderBasics\FilenFolderBasics.csproj", "{31B3CEA3-90AD-4929-A867-CDC618AB8EAC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializationBasics", "SerializationBasics\SerializationBasics.csproj", "{883369C4-84F7-45E5-BD50-B8745BD008EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadingBasics", "ThreadingBasics\ThreadingBasics.csproj", "{86158C7F-5FF6-464A-97C3-3BE58FE586CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadLocking", "ThreadLocking\ThreadLocking.csproj", "{0A8DF1C0-45A3-438D-973B-725ECA19910C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -249,6 +253,14 @@ Global
 		{883369C4-84F7-45E5-BD50-B8745BD008EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{883369C4-84F7-45E5-BD50-B8745BD008EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{883369C4-84F7-45E5-BD50-B8745BD008EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86158C7F-5FF6-464A-97C3-3BE58FE586CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86158C7F-5FF6-464A-97C3-3BE58FE586CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86158C7F-5FF6-464A-97C3-3BE58FE586CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86158C7F-5FF6-464A-97C3-3BE58FE586CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A8DF1C0-45A3-438D-973B-725ECA19910C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A8DF1C0-45A3-438D-973B-725ECA19910C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A8DF1C0-45A3-438D-973B-725ECA19910C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A8DF1C0-45A3-438D-973B-725ECA19910C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -293,6 +305,8 @@ Global
 		{4C06C07B-551B-4D68-BF25-3ECEE1DC57C2} = {24CC1163-74CA-4A84-913B-F9E7CC96B468}
 		{31B3CEA3-90AD-4929-A867-CDC618AB8EAC} = {24CC1163-74CA-4A84-913B-F9E7CC96B468}
 		{883369C4-84F7-45E5-BD50-B8745BD008EB} = {24CC1163-74CA-4A84-913B-F9E7CC96B468}
+		{86158C7F-5FF6-464A-97C3-3BE58FE586CE} = {24CC1163-74CA-4A84-913B-F9E7CC96B468}
+		{0A8DF1C0-45A3-438D-973B-725ECA19910C} = {24CC1163-74CA-4A84-913B-F9E7CC96B468}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D6BFA772-E528-4307-853A-96659A7DB7E1}
