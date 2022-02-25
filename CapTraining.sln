@@ -93,6 +93,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadLocking", "ThreadLock
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncFunction", "AsyncFunction\AsyncFunction.csproj", "{32B411D6-6812-4588-A9E0-E37415139403}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelsBasics", "ParallelsBasics\ParallelsBasics.csproj", "{EAEB5D18-E532-44E5-9172-1C530015093D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -267,6 +269,10 @@ Global
 		{32B411D6-6812-4588-A9E0-E37415139403}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32B411D6-6812-4588-A9E0-E37415139403}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32B411D6-6812-4588-A9E0-E37415139403}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAEB5D18-E532-44E5-9172-1C530015093D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAEB5D18-E532-44E5-9172-1C530015093D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAEB5D18-E532-44E5-9172-1C530015093D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAEB5D18-E532-44E5-9172-1C530015093D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -314,6 +320,7 @@ Global
 		{86158C7F-5FF6-464A-97C3-3BE58FE586CE} = {24CC1163-74CA-4A84-913B-F9E7CC96B468}
 		{0A8DF1C0-45A3-438D-973B-725ECA19910C} = {24CC1163-74CA-4A84-913B-F9E7CC96B468}
 		{32B411D6-6812-4588-A9E0-E37415139403} = {24CC1163-74CA-4A84-913B-F9E7CC96B468}
+		{EAEB5D18-E532-44E5-9172-1C530015093D} = {24CC1163-74CA-4A84-913B-F9E7CC96B468}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D6BFA772-E528-4307-853A-96659A7DB7E1}
