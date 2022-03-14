@@ -26,6 +26,12 @@ namespace ExcelAdoReader
             {
                 Console.WriteLine(reader["Name"]);
             }
+
+            OleDbCommand updatecmd = new OleDbCommand();
+            updatecmd.CommandText = "update [Sheet1$] set name = 'Updated'";
+            updatecmd.Connection = con;
+
+            updatecmd.ExecuteNonQuery();
         }
     }
 }
