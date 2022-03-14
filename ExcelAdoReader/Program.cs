@@ -19,6 +19,7 @@ namespace ExcelAdoReader
             OleDbCommand cmd = new OleDbCommand();
             cmd.CommandText = "select * from [Sheet1$]";
             cmd.Connection = con;
+            
 
             var reader = cmd.ExecuteReader();
 
