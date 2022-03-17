@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HelloEfCore.Entities;
+using System;
 
 namespace HelloEfCore
 {
@@ -6,7 +7,17 @@ namespace HelloEfCore
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            EcomDataContext context = new EcomDataContext();
+
+            /*Customer customer = new Customer();
+            customer.Address = "Address 1";
+            customer.Name = "Sreehari Aranghat";
+            
+            context.Customers.Add(customer);
+            context.SaveChanges();*/
+
+            foreach (var item in context.Customers)
+                Console.WriteLine($"{item.Name} {item.Address}");
         }
     }
 }
