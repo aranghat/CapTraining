@@ -55,18 +55,71 @@ namespace LinQBasics2
                                     , order => order.CustomerId
                                     , (order, customer) => new { OrderId = order.OrderId, Name = customer.Name, order.OrderStatus });
 
-            foreach (var order in orderList)
-                Console.WriteLine($"{order.OrderId} {order.Product} {order.Name} {order.OrderStatus}");
+            //foreach (var order in orderList)
+            //    Console.WriteLine($"{order.OrderId} {order.Product} {order.Name} {order.OrderStatus}");
 
-            var firstItem = orders.First(d => d.OrderStatus == OrderStatus.OURFORDELIEVERY);
-            Console.WriteLine(firstItem.OrderId);
+            //var firstItem = orders.First(d => d.OrderStatus == OrderStatus.OURFORDELIEVERY);
+            //Console.WriteLine(firstItem.OrderId);
 
-            var fistItem2 = orders.FirstOrDefault(d => d.OrderStatus == OrderStatus.PENDING);
-            if (fistItem2 != null)
-                Console.WriteLine(firstItem.OrderId);
-            else
-                Console.WriteLine("There are no items that is pending");
+            //var fistItem2 = orders.FirstOrDefault(d => d.OrderStatus == OrderStatus.PENDING);
+            //if (fistItem2 != null)
+            //    Console.WriteLine(firstItem.OrderId);
+            //else
+            //    Console.WriteLine("There are no items that is pending");
 
+            //var lastItem = orders.Last(d => d.OrderStatus == OrderStatus.DELIVERED);
+            //Console.WriteLine(lastItem.OrderId);
+
+            //var lastItem2 = orders.LastOrDefault(d => d.OrderStatus == OrderStatus.PENDING);
+            //if (lastItem2 != null)
+            //    Console.WriteLine(lastItem2.OrderId);
+            //else
+            //    Console.WriteLine("There are no items that is pending");
+
+
+            //if (orders.Any(d => d.CustomerId == 1001 && d.OrderStatus == OrderStatus.PENDING))
+            //    Console.WriteLine("There are pending items for customer 10001");
+            //else
+            //    Console.WriteLine("All items are delivered for customer 10001");
+
+            //if (orders.Where(d => d.CustomerId == 10002).All(d => d.OrderStatus == OrderStatus.DELIVERED))
+            //{
+            //    Console.WriteLine("All items are delivered for customer 10001");
+            //}
+            //else
+            //    Console.WriteLine("There are still items to be delivered");
+
+            for(int i = 1004; i< 1100;i++)
+            {
+                customers.Add(new Customer { CustomerId = i, Name = "Customer " + i, Email = "customer@gmail.com" });
+            }
+
+            //var top20Customers = customers.Take(20);
+
+            //foreach(var c in top20Customers)
+            //{
+            //   Console.WriteLine(c.ToString());
+            //}
+
+            //var top20Customers = customers.Skip(20).Take(20);
+
+            //foreach (var c in top20Customers)
+            //{
+            //    Console.WriteLine(c.ToString());
+            //}
+
+            var groupByProduct = orders.GroupBy(d => d.ProductId);
+
+            //GROUP KEY,COUNT
+            //      - ITEM 1
+            //      - ITEM 2
+
+            foreach(var group in groupByProduct)
+            {
+                Console.WriteLine($"PRODUCT : {group.Key}, TOTAL ORDERS : {group.Count()}");
+                foreach (var order in group)
+                    Console.WriteLine($"\t Customer Id : {order.CustomerId} {order.OrderStatus}");
+            }
 
         }
     }
