@@ -18,5 +18,7 @@ namespace HelloEfCore.Entities
 
         public int Quantity { get; set; }
         public float TotalPrice { get; set; }
+
+        public string DeliveryStatus { get; set; }
     }
 }
