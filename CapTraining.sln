@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.32126.317
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTypes", "DataTypes\DataTypes.csproj", "{03ECFEFC-55E0-45E5-8ABF-0CEBED31A081}"
 EndProject
@@ -137,9 +137,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp2", "ConsoleApp2\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SampleProject", "SampleProject", "{6221CC7F-4279-4F5F-92D2-4F8F910E82A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollegeDb", "CollegeDb\CollegeDb.csproj", "{65C31656-4A11-4B16-BD82-2F1E84FBD9AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollegeDb", "CollegeDb\CollegeDb.csproj", "{65C31656-4A11-4B16-BD82-2F1E84FBD9AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollegeApp", "CollegeApp\CollegeApp.csproj", "{F1C12631-A73E-4CFB-96ED-2F52A4F85F29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollegeApp", "CollegeApp\CollegeApp.csproj", "{F1C12631-A73E-4CFB-96ED-2F52A4F85F29}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ASP.NET WebForms", "ASP.NET WebForms", "{0974B045-3120-4A82-B5F3-BDA7BF50C7D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWeb", "HelloWeb\HelloWeb.csproj", "{BF5515BC-6954-4131-B3A9-B6E22DD44F53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -391,6 +395,10 @@ Global
 		{F1C12631-A73E-4CFB-96ED-2F52A4F85F29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1C12631-A73E-4CFB-96ED-2F52A4F85F29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1C12631-A73E-4CFB-96ED-2F52A4F85F29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF5515BC-6954-4131-B3A9-B6E22DD44F53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF5515BC-6954-4131-B3A9-B6E22DD44F53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF5515BC-6954-4131-B3A9-B6E22DD44F53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF5515BC-6954-4131-B3A9-B6E22DD44F53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -457,6 +465,7 @@ Global
 		{57D85A94-D76F-42E2-8365-B0DEB64E46F2} = {DDEC7265-17F5-482A-A093-5B924B93BD42}
 		{65C31656-4A11-4B16-BD82-2F1E84FBD9AD} = {6221CC7F-4279-4F5F-92D2-4F8F910E82A2}
 		{F1C12631-A73E-4CFB-96ED-2F52A4F85F29} = {6221CC7F-4279-4F5F-92D2-4F8F910E82A2}
+		{BF5515BC-6954-4131-B3A9-B6E22DD44F53} = {0974B045-3120-4A82-B5F3-BDA7BF50C7D5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D6BFA772-E528-4307-853A-96659A7DB7E1}
