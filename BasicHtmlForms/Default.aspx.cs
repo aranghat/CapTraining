@@ -20,7 +20,7 @@ namespace BasicHtmlForms
         protected void btnSaveStudentDetails_Click(object sender, EventArgs e)
         {
             Student student = new Student();
-            student.Age = int.Parse(txtAge.Text);
+            //student.Age = int.Parse(txtAge.Text);
 
             if (chkEnglish.Checked)
                 student.Languages = "English";
@@ -33,6 +33,8 @@ namespace BasicHtmlForms
                 student.SeatType = "Merit";
 
             student.Name = txtFirstName.Text;
+
+             
            
             foreach(ListItem listItem in lbChoiceOfLocation.Items)
             {
@@ -43,7 +45,22 @@ namespace BasicHtmlForms
 
             students.Add(student);
 
-      
+            containerHtmlForm.Visible = false;
+            containerMessageBox.Visible = true;
+        }
+
+        protected void customValidator_ServerValidate(object source
+            , ServerValidateEventArgs args)
+        {
+            string[] indoorSports = 
+                { "Chess"
+                , "Carroms"
+                , "Table Tennis" };
+
+            if (indoorSports.Contains(args.Value))
+                args.IsValid = false;
+            else
+                args.IsValid = true;
         }
     }
 }

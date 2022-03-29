@@ -24,6 +24,33 @@ namespace BasicHtmlForms
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// containerHtmlForm control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel containerHtmlForm;
+
+        /// <summary>
+        /// ValidationSummary1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
+
+        /// <summary>
+        /// pnlGeneralDetails control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlGeneralDetails;
+
+        /// <summary>
         /// lblFirstName control.
         /// </summary>
         /// <remarks>
@@ -40,6 +67,24 @@ namespace BasicHtmlForms
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtFirstName;
+
+        /// <summary>
+        /// valFirstName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator valFirstName;
+
+        /// <summary>
+        /// valFristNameRegEx control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator valFristNameRegEx;
 
         /// <summary>
         /// lblAge control.
@@ -60,6 +105,24 @@ namespace BasicHtmlForms
         protected global::System.Web.UI.WebControls.TextBox txtAge;
 
         /// <summary>
+        /// valAge control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator valAge;
+
+        /// <summary>
+        /// RangeValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator RangeValidator1;
+
+        /// <summary>
         /// lblGender control.
         /// </summary>
         /// <remarks>
@@ -76,6 +139,15 @@ namespace BasicHtmlForms
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlGender;
+
+        /// <summary>
+        /// pnlAdditionalDetails control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlAdditionalDetails;
 
         /// <summary>
         /// lblSelectSeat control.
@@ -168,6 +240,60 @@ namespace BasicHtmlForms
         protected global::System.Web.UI.WebControls.ListBox lbChoiceOfLocation;
 
         /// <summary>
+        /// pnlSecurityDetails control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlSecurityDetails;
+
+        /// <summary>
+        /// txtPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtPassword;
+
+        /// <summary>
+        /// txtConfirmPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtConfirmPassword;
+
+        /// <summary>
+        /// valComparepasswords control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator valComparepasswords;
+
+        /// <summary>
+        /// txtFavOutDoorSports control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtFavOutDoorSports;
+
+        /// <summary>
+        /// customValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator customValidator;
+
+        /// <summary>
         /// btnSaveStudentDetails control.
         /// </summary>
         /// <remarks>
@@ -175,5 +301,23 @@ namespace BasicHtmlForms
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSaveStudentDetails;
+
+        /// <summary>
+        /// containerMessageBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel containerMessageBox;
+
+        /// <summary>
+        /// lblMessageBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMessageBox;
     }
 }
