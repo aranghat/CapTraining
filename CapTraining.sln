@@ -151,6 +151,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigationBasics", "Navigat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterPagesBasics", "MasterPagesBasics\MasterPagesBasics.csproj", "{44456DE4-1B6D-44CE-A8F3-07DC98D79B74}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NestedMasterPages", "NestedMasterPages\NestedMasterPages.csproj", "{AED841CE-67D5-4B45-84DF-B415CDE75D82}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -417,6 +419,10 @@ Global
 		{44456DE4-1B6D-44CE-A8F3-07DC98D79B74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44456DE4-1B6D-44CE-A8F3-07DC98D79B74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44456DE4-1B6D-44CE-A8F3-07DC98D79B74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AED841CE-67D5-4B45-84DF-B415CDE75D82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AED841CE-67D5-4B45-84DF-B415CDE75D82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AED841CE-67D5-4B45-84DF-B415CDE75D82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AED841CE-67D5-4B45-84DF-B415CDE75D82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -487,6 +493,7 @@ Global
 		{6E072DF9-96D5-488A-8E88-B870E68F6104} = {0974B045-3120-4A82-B5F3-BDA7BF50C7D5}
 		{5E33463E-6AF9-4D3F-88CD-13EB2D2851DE} = {0974B045-3120-4A82-B5F3-BDA7BF50C7D5}
 		{44456DE4-1B6D-44CE-A8F3-07DC98D79B74} = {0974B045-3120-4A82-B5F3-BDA7BF50C7D5}
+		{AED841CE-67D5-4B45-84DF-B415CDE75D82} = {0974B045-3120-4A82-B5F3-BDA7BF50C7D5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D6BFA772-E528-4307-853A-96659A7DB7E1}
