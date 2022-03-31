@@ -155,6 +155,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NestedMasterPages", "Nested
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroToStyles", "IntroToStyles\IntroToStyles.csproj", "{F98964BF-EF05-4C7D-94B5-EC7ED5414479}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataControls", "DataControls\DataControls.csproj", "{FA14D9CA-0998-4624-BEC7-765D704EF628}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -429,6 +431,10 @@ Global
 		{F98964BF-EF05-4C7D-94B5-EC7ED5414479}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F98964BF-EF05-4C7D-94B5-EC7ED5414479}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F98964BF-EF05-4C7D-94B5-EC7ED5414479}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA14D9CA-0998-4624-BEC7-765D704EF628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA14D9CA-0998-4624-BEC7-765D704EF628}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA14D9CA-0998-4624-BEC7-765D704EF628}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA14D9CA-0998-4624-BEC7-765D704EF628}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -501,6 +507,7 @@ Global
 		{44456DE4-1B6D-44CE-A8F3-07DC98D79B74} = {0974B045-3120-4A82-B5F3-BDA7BF50C7D5}
 		{AED841CE-67D5-4B45-84DF-B415CDE75D82} = {0974B045-3120-4A82-B5F3-BDA7BF50C7D5}
 		{F98964BF-EF05-4C7D-94B5-EC7ED5414479} = {0974B045-3120-4A82-B5F3-BDA7BF50C7D5}
+		{FA14D9CA-0998-4624-BEC7-765D704EF628} = {0974B045-3120-4A82-B5F3-BDA7BF50C7D5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D6BFA772-E528-4307-853A-96659A7DB7E1}
