@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DataGrid.aspx" />
+    <Content Include="FormsView.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -78,6 +79,13 @@
     </Compile>
     <Compile Include="DataGrid.aspx.designer.cs">
       <DependentUpon>DataGrid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormsView.aspx.cs">
+      <DependentUpon>FormsView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormsView.aspx.designer.cs">
+      <DependentUpon>FormsView.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
