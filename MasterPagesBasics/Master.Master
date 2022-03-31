@@ -1,0 +1,20 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.Master.cs" Inherits="MasterPagesBasics.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div><a href="/">Home</a> | <a href="/ContactUs.aspx">Contact Us</a> |<a href="/AboutUs.Aspx">About Us</a> | <asp:Label ID="lblMessageInMaster" runat="server" Text="Label"></asp:Label></div>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <div>&copy 2022. Demo Application</div>
+</body>
+</html>
