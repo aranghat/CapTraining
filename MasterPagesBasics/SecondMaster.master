@@ -1,0 +1,5 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="SecondMaster.master.cs" Inherits="MasterPagesBasics.SecondMaster" %>
+<asp:Content id="Content1" ContentPlaceholderID="MainContent" runat="server">
+    <h1>Second Master Page Content</h1>
+    <asp:ContentPlaceHolder ID="ChildContent2" runat="server" />
+</asp:Content>

@@ -8,11 +8,10 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <div><a href="/">Home</a> | <a href="/ContactUs.aspx">Contact Us</a> |<a href="/AboutUs.Aspx">About Us</a> | <asp:Label ID="lblMessageInMaster" runat="server" Text="Label"></asp:Label></div>
+    <div><a href="/">Home</a> | <a href="/ContactUs.aspx">Contact Us</a> |<a href="/AboutUs.Aspx">About Us</a> | <asp:Label ID="lblMessageInMaster" runat="server" Text="Label"></asp:Label>|Page Color : Red Blue Green</div>
     <form id="form1" runat="server">
         <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
+           <asp:ContentPlaceHolder ID="MainContent" runat="server" />
         </div>
     </form>
     <div>&copy 2022. Demo Application</div>
