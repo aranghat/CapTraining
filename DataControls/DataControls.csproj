@@ -70,6 +70,7 @@
     <Content Include="DataGrid.aspx" />
     <Content Include="FormsView.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="RepeaterView.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -91,6 +92,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepeaterView.aspx.cs">
+      <DependentUpon>RepeaterView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RepeaterView.aspx.designer.cs">
+      <DependentUpon>RepeaterView.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
