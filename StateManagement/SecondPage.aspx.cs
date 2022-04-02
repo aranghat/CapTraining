@@ -14,7 +14,7 @@ namespace StateManagement
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["PageCount"] != null)
+            if (Application["PageCount"] != null)
                 pageVisitCount = (int)Session["PageCount"];
 
             pageVisitCount++;
@@ -41,7 +41,8 @@ namespace StateManagement
              * 
              * c. Its the slowest of all three
             */
-            Session["PageCount"] = pageVisitCount;
+            //Session["PageCount"] = pageVisitCount;
+            Application["PageCount"] = pageVisitCount;
             Session["UserId"] = userName;
 
             lblShowPageVisitCount.Text = pageVisitCount.ToString();

@@ -17,7 +17,7 @@ namespace StateManagement
             //if (ViewState["PageCount"] != null)
             //    pageVisitCount = int.Parse(ViewState["PageCount"].ToString());
 
-            if (Session["PageCount"] != null)
+            if (Application["PageCount"] != null)
                 pageVisitCount = (int)Session["PageCount"];
 
             pageVisitCount++;
@@ -29,7 +29,7 @@ namespace StateManagement
             //else
             //    ViewState.Add("PageCount", "1");
 
-            Session["PageCount"] = pageVisitCount;
+            Application["PageCount"] = pageVisitCount;
 
             lblShowPageVisitCount.Text = pageVisitCount.ToString();
             //lblServerTime.Text = DateTime.Now.ToString("hh:mm:ss");
