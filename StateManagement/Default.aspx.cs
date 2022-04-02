@@ -33,11 +33,22 @@ namespace StateManagement
 
             lblShowPageVisitCount.Text = pageVisitCount.ToString();
             //lblServerTime.Text = DateTime.Now.ToString("hh:mm:ss");
+
+             var cookie = 
+                Request.Cookies["Reminder"];
+
+            if(cookie != null)
+            {
+                lblServerTime.Text 
+                    = "Hey last time you asked me remind : " 
+                    + cookie.Value;
+            }
+
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Response.Redirect("SecondPage.aspx");
+            throw new Exception("Invalid details");
         }
     }
 }
