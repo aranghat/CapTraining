@@ -15,7 +15,7 @@ namespace StateManagement
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Application["PageCount"] != null)
-                pageVisitCount = (int)Session["PageCount"];
+                pageVisitCount = (int)Application["PageCount"];
 
             pageVisitCount++;
 

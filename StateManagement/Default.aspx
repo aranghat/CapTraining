@@ -21,7 +21,7 @@
             <br />
             <asp:Label ID="lblShowPageVisitCount" runat="server" Text=""></asp:Label>
 
-            <asp:Button ID="Button1" runat="server" Text="Button" />
+            <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
         </div>
     </form>
 </body>

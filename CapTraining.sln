@@ -159,6 +159,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataControls", "DataControl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateManagement", "StateManagement\StateManagement.csproj", "{EF7019BC-8184-48FD-9335-72A0196D8D46}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginBasics", "LoginBasics\LoginBasics.csproj", "{D50002F9-7CC7-46F4-8013-D1776456A367}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -441,6 +443,10 @@ Global
 		{EF7019BC-8184-48FD-9335-72A0196D8D46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF7019BC-8184-48FD-9335-72A0196D8D46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF7019BC-8184-48FD-9335-72A0196D8D46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D50002F9-7CC7-46F4-8013-D1776456A367}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D50002F9-7CC7-46F4-8013-D1776456A367}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D50002F9-7CC7-46F4-8013-D1776456A367}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D50002F9-7CC7-46F4-8013-D1776456A367}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -515,6 +521,7 @@ Global
 		{F98964BF-EF05-4C7D-94B5-EC7ED5414479} = {0974B045-3120-4A82-B5F3-BDA7BF50C7D5}
 		{FA14D9CA-0998-4624-BEC7-765D704EF628} = {0974B045-3120-4A82-B5F3-BDA7BF50C7D5}
 		{EF7019BC-8184-48FD-9335-72A0196D8D46} = {0974B045-3120-4A82-B5F3-BDA7BF50C7D5}
+		{D50002F9-7CC7-46F4-8013-D1776456A367} = {0974B045-3120-4A82-B5F3-BDA7BF50C7D5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D6BFA772-E528-4307-853A-96659A7DB7E1}

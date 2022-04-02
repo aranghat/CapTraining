@@ -9,6 +9,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <h1>Second Page</h1>
              <asp:Label ID="lblShowPageVisitCount" runat="server" Text=""></asp:Label>
 
             <asp:Button ID="Button1" runat="server" Text="Button" />
