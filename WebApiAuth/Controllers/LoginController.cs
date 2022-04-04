@@ -1,7 +1,11 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
+using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Text;
 using WebApiAuth.Model;
 
 namespace WebApiAuth.Controllers
@@ -35,7 +39,21 @@ namespace WebApiAuth.Controllers
 
         private string GenerateToken(string userName)
         {
-            return string.Empty;
+            string jwtToken = string.Empty;
+
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("Some Secret"));
+            var credentials = new SigningCredentials(securityKey,SecurityAlgorithms.HmacSha256);
+
+            var token  = new JwtSecurityToken("myapp.com"
+                                            , "myapp.com"
+                                            ,null
+                                            ,expires: DateTime.Now.AddDays(7)
+                                            ,signingCredentials: credentials);
+
+
+            jwtToken = new JwtSecurityTokenHandler().WriteToken(token);
+
+            return jwtToken;
         }
     }
 }
