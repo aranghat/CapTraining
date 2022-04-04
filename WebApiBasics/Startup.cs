@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApiBasics.CustomMiddleWare;
 
 namespace WebApiBasics
 {
@@ -16,7 +17,13 @@ namespace WebApiBasics
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc().AddXmlSerializerFormatters();
             services.AddControllers();
+
+            services.AddSwaggerGen(c => {
+                c.SwaggerDoc("V1"
+                    , new Microsoft.OpenApi.Models.OpenApiInfo { Title = "My Awsome Weather API" });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -27,7 +34,14 @@ namespace WebApiBasics
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseMiddleware<LogRequestMiddleWare>();
             app.UseRouting();
+           
+            app.UseSwagger();
+            app.UseSwaggerUI(c => {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My Awsome API");
+            });
+
 
             app.UseEndpoints(endpoints =>
             {
