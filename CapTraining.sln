@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31729.503
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTypes", "DataTypes\DataTypes.csproj", "{03ECFEFC-55E0-45E5-8ABF-0CEBED31A081}"
 EndProject
@@ -163,7 +163,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginBasics", "LoginBasics\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web.Api", "Web.Api", "{F1CEF75E-F729-45AC-AEC0-A4238175C52D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiBasics", "WebApiBasics\WebApiBasics.csproj", "{8B079A9C-E926-4ABC-9EE3-7E446F938181}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiBasics", "WebApiBasics\WebApiBasics.csproj", "{8B079A9C-E926-4ABC-9EE3-7E446F938181}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiAuth", "WebApiAuth\WebApiAuth.csproj", "{796C7B99-2BD5-42C2-B1B2-BC5E8F3B336C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -455,6 +457,10 @@ Global
 		{8B079A9C-E926-4ABC-9EE3-7E446F938181}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B079A9C-E926-4ABC-9EE3-7E446F938181}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B079A9C-E926-4ABC-9EE3-7E446F938181}.Release|Any CPU.Build.0 = Release|Any CPU
+		{796C7B99-2BD5-42C2-B1B2-BC5E8F3B336C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{796C7B99-2BD5-42C2-B1B2-BC5E8F3B336C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{796C7B99-2BD5-42C2-B1B2-BC5E8F3B336C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{796C7B99-2BD5-42C2-B1B2-BC5E8F3B336C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -531,6 +537,7 @@ Global
 		{EF7019BC-8184-48FD-9335-72A0196D8D46} = {0974B045-3120-4A82-B5F3-BDA7BF50C7D5}
 		{D50002F9-7CC7-46F4-8013-D1776456A367} = {0974B045-3120-4A82-B5F3-BDA7BF50C7D5}
 		{8B079A9C-E926-4ABC-9EE3-7E446F938181} = {F1CEF75E-F729-45AC-AEC0-A4238175C52D}
+		{796C7B99-2BD5-42C2-B1B2-BC5E8F3B336C} = {F1CEF75E-F729-45AC-AEC0-A4238175C52D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D6BFA772-E528-4307-853A-96659A7DB7E1}
