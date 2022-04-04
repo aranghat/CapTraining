@@ -32,7 +32,7 @@ namespace WebApiAuth
                             ValidateLifetime = true,
                             ValidateIssuerSigningKey = true,
                             ValidIssuer = "myapp.com",
-                            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("Some Secret"))
+                            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("This is Some Really Big Big Secret"))
                         };
                     });
         }

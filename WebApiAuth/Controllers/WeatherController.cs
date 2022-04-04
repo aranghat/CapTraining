@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using WebApiAuth.Model;
+using System.Linq;
 
 namespace WebApiAuth.Controllers
 {
@@ -26,9 +27,24 @@ namespace WebApiAuth.Controllers
             }
         }
 
+        [HttpGet]
         public IActionResult Get()
         {
             return Ok(weelyWether);
+        }
+
+        [Authorize(Roles = "Admin")]
+        public IActionResult Put(WeatherReport report)
+        {
+            var weatherReport = weelyWether.FirstOrDefault(d => d.WeekDay == report.WeekDay);
+
+            if (weatherReport != null)
+            {
+                weatherReport.Temprature = report.Temprature;
+                return Ok(weatherReport);
+            }
+            else
+                return NotFound($"No weather report found for {report.WeekDay}");
         }
     }
 }
