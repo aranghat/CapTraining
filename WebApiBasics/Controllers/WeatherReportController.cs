@@ -28,6 +28,7 @@ namespace WebApiBasics.Controllers
         }
 
         //Actions
+        [HttpGet]
         public IActionResult Get()
         {
             var todayReport = new WeatherReport { WeekDay = DateTime.Now.DayOfWeek.ToString()
@@ -36,12 +37,14 @@ namespace WebApiBasics.Controllers
         }
 
         [Route("fortheweek")]
+        [HttpGet]
         public IActionResult GetWeatherForWeek()
         {
             return Ok(weelyWether);
         }
 
         [Route("fortheweek/{weekday}")]
+        [HttpGet]
         public IActionResult GetWeatherForWeekDay(string weekday)
         {
             if (string.IsNullOrEmpty(weekday) || weekday.Length < 4)

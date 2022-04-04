@@ -21,7 +21,7 @@ namespace WebApiBasics
             services.AddControllers();
 
             services.AddSwaggerGen(c => {
-                c.SwaggerDoc("V1"
+                c.SwaggerDoc("v1"
                     , new Microsoft.OpenApi.Models.OpenApiInfo { Title = "My Awsome Weather API" });
             });
         }

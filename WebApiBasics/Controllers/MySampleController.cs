@@ -11,6 +11,7 @@ namespace WebApiBasics.Controllers
     [ApiController]
     public class MySampleController : ControllerBase
     {
+        [HttpGet]
         public IActionResult Get()
         {
             return Ok("Time in the server is " + DateTime.Now);
