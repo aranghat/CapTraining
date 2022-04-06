@@ -3,7 +3,23 @@
 
 <strong>Total Books We have is : </strong> @Model.Count<br />
 
-<table class="table">
+<div class="container">
+    <div class="row">
+        @foreach(var book in Model)
+        {
+            <div class="col-4">
+                <div class="card" style="width:300px">
+                    <img src="~/Images/@book.CoverImage" width=300 />
+                    <div class="card-body">
+                          <strong>@book.Title</strong>
+                     </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@*<table class="table">
     <thead>
         <tr>
             <th></th>
@@ -29,6 +45,6 @@
             </tr>
         }
     </tbody>
-</table>
+</table>*@
 
 
