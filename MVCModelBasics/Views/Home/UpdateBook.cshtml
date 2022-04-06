@@ -1,0 +1,35 @@
+﻿@model MVCModelBasics.Model.Book
+
+@if(Model != null)
+{
+    <form action="/updatebook" method="post">
+
+        @if(ViewBag.IsSuccessful != null)
+        {
+            <div class="alert alert-success">@ViewBag.Message</div>
+        }
+
+        <h1>Update  Book</h1>
+
+        <label>
+            BookId 
+        </label>
+        @Html.TextBoxFor(model => model.Id)
+
+        <label>
+            Title 
+        </label>
+        @Html.TextBoxFor(model => model.Title)
+
+        <label>
+            Author 
+        </label>
+        @Html.TextBoxFor(model => model.Author)
+
+        <button type="submit">Save</button>
+    </form>
+}
+else
+{
+    <div>Book with the given id does not exist</div>
+}
