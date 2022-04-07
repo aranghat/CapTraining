@@ -1,0 +1,11 @@
+﻿<h1>Sent SMS</h1>
+
+@if(ViewBag.Message != null)
+{
+    <div>@ViewBag.Message</div>
+}
+
+<form action="/" method="post">
+    <input type="text" name="sms" />
+    <button type="submit">Sent SMS</button>
+</form>
