@@ -1,6 +1,7 @@
 ﻿@model MVCModelBasics.Model.Book
-
-<form action="/addnewbook" method="post">
+<!-- STEP 2 : give the enctype for the form -->
+<form action="/addnewbook" method="post"
+enctype="multipart/form-data">
     <h1>Add New Book</h1>
     @if(ViewBag.IsValid != null)
     {
@@ -32,6 +33,13 @@
     @Html.TextBoxFor(model => model.Author)
     @Html.ValidationMessageFor(model => model.Author)
 
+    
+    </div>
+    <div>
+        <!-- STEP 1 : ADD A FILE CONTROL-->
+        <label>Upload Cover Image</label>
+        <input type="file" name="imgCover" 
+                accept=".jpg;.jpeg" />
     </div>
     <div>
     <button type="submit" class="btn btn-primary">Save</button>

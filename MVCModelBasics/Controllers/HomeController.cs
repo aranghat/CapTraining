@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using MVCModelBasics.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -10,8 +13,12 @@ namespace MVCModelBasics.Controllers
     {
         static List<Book> books = new List<Book>();
 
-        public HomeController()
+        IHostingEnvironment hostingEnvironment;
+        //STEP 3 : OPTIONAL Inject IHostingEnvironment
+        public HomeController(IHostingEnvironment hostingEnvironment)
         {
+            this.hostingEnvironment = hostingEnvironment;
+
             if (books.Count == 0)
             {
                 books.Add(new Book { Author = "Dan Brown", Id = 10001, Title = "Davinci Code", CoverImage = "1.jpg" });
@@ -21,6 +28,7 @@ namespace MVCModelBasics.Controllers
             }
         }
 
+        #region others
         public IActionResult Index()
         {
             return View(books);
@@ -32,17 +40,44 @@ namespace MVCModelBasics.Controllers
         {  
             return View();
         }
-
+        #endregion
         [Route("addnewbook")]
         [HttpPost]
-        public IActionResult CreateNewBook(Book book)
+        public IActionResult CreateNewBook(Book book,IFormFile imgCover
+                    /*STEP 4: Use IFormFile as parameter */)
         {
             if (ModelState.IsValid)
             {
                 if (book != null)
                 {
                     if (!books.Contains(book))
+                    {
+                        //STEP : 5 CHECK AND SAVE THE FILE
+                        //Check if a file is uploaded
+                        if(imgCover != null)
+                        {
+                            //Get the wwwroot path of the application
+                            string wwwRootPath  = this.hostingEnvironment.WebRootPath;
+
+                            //Create a unique file name
+                            string fileName     = Guid.NewGuid().ToString() + ".jpg";
+
+                            //Create a file
+                            using (var stream = System.IO.File.Create(wwwRootPath
+                                + @"\images\" + fileName))
+                            {
+                                //Copy the image to the file path
+                                imgCover.CopyTo(stream);
+
+                                //Set the book cover with the new file name
+                                book.CoverImage = fileName;
+                            }
+                        }
+
+
                         books.Add(book);
+                        Response.Redirect("/");
+                    }
                     else
                         ViewBag.Error = $"{book.Title} already exist";
                 }
