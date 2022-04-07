@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MVCCommon;
+using MVCDependencyInjection.SmsProvider;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,8 +23,17 @@ namespace MVCDependencyInjection
             services.AddMvc();
             services.AddControllers();
 
-            //services.AddTransient<ISmsSender, AirtelSmsSender>();
-            services.AddTransient<ISmsSender, JioSmsProvider>();
+            //Instance will be created per user scope
+            //services.AddScoped<ISmsSender,AirtelSmsSender>();
+
+            //Instance will be created just once
+            //services.AddSingleton<ISmsSender,AirtelSmsSender>(); 
+            
+            //Every call of dependency will get its own copy of a instance
+            services.AddTransient<ISmsSender, AirtelSmsSender>();
+
+            //ISmsSender smsSender = new AirtelSmsSender();
+      
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

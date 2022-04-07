@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MVCModelBasics.Model;
@@ -9,6 +10,7 @@ using System.Linq;
 namespace MVCModelBasics.Controllers
 {
     [Route("/")]
+    [Authorize]
     public class HomeController : Controller
     {
         static List<Book> books = new List<Book>();
