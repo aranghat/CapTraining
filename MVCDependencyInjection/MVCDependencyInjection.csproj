@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AirtelSmsLibrary\AirtelSmsLibrary.csproj" />
+    <ProjectReference Include="..\JioSmsSender\JioSmsSender.csproj" />
     <ProjectReference Include="..\MVCCommon\MVCCommon.csproj" />
   </ItemGroup>
 

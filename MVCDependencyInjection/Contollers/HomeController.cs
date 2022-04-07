@@ -9,6 +9,13 @@ namespace MVCDependencyInjection.Contollers
     {
         ISmsSender smsSender;
 
+        //Injecting the dependency ISmsSender
+        //Dependency Injection
+        public HomeController(ISmsSender smsSender)
+        {
+            this.smsSender = smsSender; 
+        }
+
         [HttpGet]
         public IActionResult Index()
         {
