@@ -15,26 +15,30 @@ namespace MVCModelBasics.Controllers
 
         public LoginController()
         {
-            users.Add(new User { Name = "Sree", UserName = "sreehariis@gmail.com", Password = "12345", Role = "User" });
-            users.Add(new User { Name = "Bill", UserName = "bill@gmail.com", Password = "12345", Role = "Admin" });
-            users.Add(new User { Name = "Steve", UserName = "steve@gmail.com", Password = "12345", Role = "User" });
+            users.Add(new User { Id = 10001, Name = "Sree", UserName = "sreehariis@gmail.com", Password = "12345", Role = "User" });
+            users.Add(new User { Id = 10002, Name = "Bill", UserName = "bill@gmail.com", Password = "12345", Role = "Admin" });
+            users.Add(new User { Id = 10003, Name = "Steve", UserName = "steve@gmail.com", Password = "12345", Role = "User" });
 
         }
 
         [HttpGet]
         public IActionResult Index()
         {
+          
+
             return View();
         }
 
         [HttpPost]
         public async Task<IActionResult> Index(User user)
         {
-            var u = users.FirstOrDefault(d => d.UserName == user.UserName && d.Password == user.Password);
+            var u = users.FirstOrDefault(d => d.UserName == user.UserName 
+            && d.Password == user.Password);
 
             if (u != null)
             {
                 List<Claim> claims = new List<Claim>();
+                claims.Add(new Claim(ClaimTypes.NameIdentifier, u.Id.ToString()));
                 claims.Add(new Claim(ClaimTypes.Name, u.UserName));
                 claims.Add(new Claim(ClaimTypes.Role, u.Role));
 

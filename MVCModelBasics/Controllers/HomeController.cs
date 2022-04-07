@@ -6,6 +6,7 @@ using MVCModelBasics.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 
 namespace MVCModelBasics.Controllers
 {
@@ -32,16 +33,24 @@ namespace MVCModelBasics.Controllers
 
         #region others
         public IActionResult Index()
-        {
+        { 
+          var userId = HttpContext.User
+                .Claims
+                .FirstOrDefault(d => d.Type == 
+                ClaimTypes.NameIdentifier).Value;
+          ViewBag.UserId = userId;
+
             return View(books);
         }
 
         [Route("addnewbook")]
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public IActionResult CreateNewBook()
         {  
             return View();
         }
+
         #endregion
         [Route("addnewbook")]
         [HttpPost]
