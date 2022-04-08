@@ -1,5 +1,45 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model MyToDo.ToDoItem
+<html>
+    <head>
+          <title>MyTo Do Items</title>
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+                <form action="/" method="post">
+                    <div class="card">
+                        <div class="card-body">
+                            @Html.TextBoxFor(d => d.Title,null,new {@class = "form-control"})
+                        </div>
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-primary">Add To My List</button>
+                        </div>
+                    </div>
+                 </form>
+                @if(ViewBag.MyToDoItems != null)
+                {
+                    @foreach(MyToDo.ToDoItem item in @ViewBag.MyToDoItems)
+                    {
+                        <div class="card my-3 shadow">
+                        <div class="card-body">
+                            <div>@item.Title</div>
+                            @if(item.IsCompleted)
+                            {
+                                <div class="text-success"><strong>COMPLETED</strong></div>
+                            }
+                            else
+                            {
+                                <form action="/markascompleted/@item.Id" method="post">
+                                    <button type="submit" class="btn btn-light my-2 btn-sm">Mark as Completed</button>
+                                </form>
+                            }
+                        </div>
+                        
+                        </div>
+                    }
+                
+                }
+           
+        </div>
+    </body>
+</html>
