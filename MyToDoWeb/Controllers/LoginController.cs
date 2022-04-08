@@ -12,7 +12,12 @@ namespace MyToDoWeb.Controllers
     [Route("/login")]
     public class LoginController : Controller
     {
-        ToDoDbContext context = new ToDoDbContext();
+        ToDoDbContext context;
+
+        public LoginController(ToDoDbContext context)
+        {
+            this.context = context;
+        }
 
         [HttpGet]
         public IActionResult Index()

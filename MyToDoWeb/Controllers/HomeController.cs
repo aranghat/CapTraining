@@ -10,7 +10,12 @@ namespace MyToDoWeb.Controllers
     [Authorize]
     public class HomeController : Controller
     {
-        ToDoDbContext context = new ToDoDbContext();
+        ToDoDbContext context;
+
+        public HomeController(ToDoDbContext context)
+        {
+            this.context = context;
+        }
 
         [HttpGet]
         public IActionResult Index()
